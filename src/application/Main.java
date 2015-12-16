@@ -12,8 +12,6 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			// Parent root =
-			// FXMLLoader.load(getClass().getResource("/application/MyView.fxml"));
 			URL url = getClass().getResource("/application/MyView.fxml");
 			AnchorPane pane = FXMLLoader.load(url);
 			Scene scene = new Scene(pane);

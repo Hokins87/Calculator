@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 public class MyController implements Initializable {
 
@@ -18,8 +19,8 @@ public class MyController implements Initializable {
 
 	}
 
-	double oper1 = 0, oper2 = 0, result = 0;
-	String operation = "";
+	private double oper1 = 0, oper2 = 0;
+	private String operation = "";
 
 	@FXML
 	private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
@@ -30,12 +31,8 @@ public class MyController implements Initializable {
 	@FXML
 	private TextField txtField;
 
-	/*
-	 * public void addNum0(ActionEvent event) { if(btn0 == event.getSource()){
-	 * if(txtField.getText().equals("0")){ txtField.setText(txtField.getText() +
-	 * ""); }else{ txtField.setText(txtField.getText() + "0");
-	 * System.out.println("0"); } } }
-	 */
+	@FXML
+	private AnchorPane lblDisplay;
 
 	public void btnClick(ActionEvent event) {
 		btn0.setOnAction(new MyEvent());
@@ -49,8 +46,15 @@ public class MyController implements Initializable {
 		btn8.setOnAction(new MyEvent());
 		btn9.setOnAction(new MyEvent());
 	}
-
+	
 	/*
+	 * public void addNum0(ActionEvent event) { 
+	 * if(btn0 == event.getSource()){
+	 * if(txtField.getText().equals("0")){ 
+	 * txtField.setText(txtField.getText() +
+	 * ""); }else{ txtField.setText(txtField.getText() + "0");
+	 * System.out.println("0"); } } }
+	 *
 	 * public void addNum1(ActionEvent event) {
 	 * if(txtField.getText().equals("0")){ txtField.setText(""); }
 	 * txtField.setText(txtField.getText() + "1"); System.out.println("1"); }
@@ -132,7 +136,6 @@ public class MyController implements Initializable {
 
 	public void result(ActionEvent event) {
 		MathCalculator math = new MathCalculator();
-		System.out.println("Result");
 		oper2 = Double.valueOf(txtField.getText());
 		txtField.setText("");
 		if (operation.equals("/")) {
@@ -152,69 +155,42 @@ public class MyController implements Initializable {
 
 		@Override
 		public void handle(ActionEvent event) {
-			 Button btn = (Button) event.getSource();
-			System.out.println(btn.getText());
-			if (btn == btn0) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText(txtField.getText() + "");
-				} else {
-					txtField.setText(txtField.getText() + "0");
-					System.out.println("0");
-				}
-			} else if (btn == btn1) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "1");
+			Button btn = (Button) event.getSource();
+			if (txtField.getText().equals("0")) {
+				txtField.setText("");
+			}
+			txtField.setText(txtField.getText() + btn.getText());
+			switch (btn.getText()) {
+			case "0":
+				System.out.println("0");
+				break;
+			case "1":
 				System.out.println("1");
-			} else if (btn == btn2) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "2");
+				break;
+			case "2":
 				System.out.println("2");
-			} else if (btn == btn3) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "3");
+				break;
+			case "3":
 				System.out.println("3");
-			} else if (btn == btn4) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "4");
+				break;
+			case "4":
 				System.out.println("4");
-			} else if (btn == btn5) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "5");
+				break;
+			case "5":
 				System.out.println("5");
-			} else if (btn == btn6) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "6");
+				break;
+			case "6":
 				System.out.println("6");
-			} else if (btn == btn7) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "7");
+				break;
+			case "7":
 				System.out.println("7");
-			} else if (btn == btn8) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "8");
+				break;
+			case "8":
 				System.out.println("8");
-			} else if (btn == btn9) {
-				if (txtField.getText().equals("0")) {
-					txtField.setText("");
-				}
-				txtField.setText(txtField.getText() + "9");
+				break;
+			case "9":
 				System.out.println("9");
+				break;
 			}
 		}
 
