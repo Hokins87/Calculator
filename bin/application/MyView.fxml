@@ -21,20 +21,20 @@
             <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button fx:id="btn8" layoutX="102.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnClick" text="8" GridPane.columnIndex="1" />
-            <Button fx:id="btn9" layoutX="172.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="9" GridPane.columnIndex="2" />
-            <Button fx:id="btn7" layoutX="31.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="7" />
-            <Button fx:id="btn2" layoutX="102.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnClick" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="btn1" layoutX="31.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="1" GridPane.rowIndex="2" />
-            <Button fx:id="btn4" layoutX="31.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="4" GridPane.rowIndex="1" />
-            <Button fx:id="btn0" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn8" layoutX="102.0" layoutY="108.0" mnemonicParsing="false" text="8" GridPane.columnIndex="1" />
+            <Button fx:id="btn9" layoutX="172.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="9" GridPane.columnIndex="2" />
+            <Button fx:id="btn7" layoutX="31.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="7" />
+            <Button fx:id="btn2" layoutX="102.0" layoutY="185.0" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn1" layoutX="31.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn4" layoutX="31.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="btn0" layoutX="102.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button fx:id="btnResult" layoutX="172.0" layoutY="228.0" mnemonicParsing="false" onAction="#result" prefHeight="25.0" prefWidth="25.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="btn3" layoutX="172.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="btn5" layoutX="102.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnClick" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn3" layoutX="172.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btn5" layoutX="102.0" layoutY="144.0" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="btnSum" layoutX="240.0" layoutY="228.0" mnemonicParsing="false" onAction="#addSum" prefHeight="25.0" prefWidth="25.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <Button fx:id="btnPoint" layoutX="31.0" layoutY="228.0" mnemonicParsing="false" onAction="#addPoint" prefHeight="25.0" prefWidth="25.0" text="." GridPane.rowIndex="3" />
             <Button fx:id="btnDivide" layoutX="240.0" layoutY="108.0" mnemonicParsing="false" onAction="#addDivide" prefHeight="25.0" prefWidth="25.0" text="/" GridPane.columnIndex="3" />
-            <Button fx:id="btn6" layoutX="172.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnClick" prefHeight="25.0" prefWidth="25.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn6" layoutX="172.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="btnMultiply" layoutX="240.0" layoutY="144.0" mnemonicParsing="false" onAction="#addMultiply" prefHeight="25.0" prefWidth="25.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Button fx:id="btnSub" layoutX="240.0" layoutY="185.0" mnemonicParsing="false" onAction="#addSubtract" prefHeight="25.0" prefWidth="25.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
          </children>
